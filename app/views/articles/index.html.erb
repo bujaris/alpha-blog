@@ -1,5 +1,25 @@
 <h1>Welcome to the article home page</h1>
-<h2>All articles</h2>
+<h2>Articles listing page</h2>
 
-<p><strong>Title: </strong><%= @article.title %></p>
-<p><strong>Description: </strong><%= @article.description %></p>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <%= @articles.each do |article| %>
+            <tr>
+                <td><%= article.id %></td>
+                <td><%= article.title %></td>
+                <td><%= article.description %></td>
+                <td>Placeholder</td>
+            </tr>
+        <% end %>
+    </tbody>
+
+</table>
