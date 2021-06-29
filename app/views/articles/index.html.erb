@@ -8,6 +8,8 @@
             <th>Title</th>
             <th>Description</th>
             <th>Actions</th>
+            <th>Created</th>
+            <th>Last Updated</th>
         </tr>
     </thead>
 
@@ -17,6 +19,8 @@
                 <td><%= article.id %></td>
                 <td><%= article.title %></td>
                 <td><%= article.description %></td>
+                <td><%= article.created_at %></td>
+                <td><%= article.updated_at %></td>
                 <td>Placeholder</td>
             </tr>
         <% end %>
